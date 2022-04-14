@@ -1,0 +1,66 @@
+<!-- Developed by Rahul Karda-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IP Address Tracker</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+</head>
+
+<body>
+  <main id="position_absolute_block">
+    <h1 id="heading">IP Address Tracker</h1>
+
+    <div class="search_container">
+      <div>
+        <input id="ipAddress" type="text" name="ipAddress" placeholder="Search for any IP address or domain">
+      </div>
+      <div>
+        <button id="myButton" onclick="myFunction()"><img src="/IP-Address-Tracker/images/icon-arrow.svg" alt="arrow"></button>
+      </div>
+    </div>
+
+    <div id="error"></div>
+
+    <div class="info_container">
+      <div class="info_sub-box">
+        <p class="parameter">IP ADDRESS</p>
+        <p id="box1">0.0.0.0</p>
+      </div>
+
+      <div class="info_sub-box">
+        <p class="parameter">LOCATION</p>
+        <p id="box2">City, Region PIN</p>
+      </div>
+
+      <div class="info_sub-box">
+        <p class="parameter">TIMEZONE</p>
+        <p id="box3">UTC-00:00</p>
+      </div>
+
+      <div class="info_sub-box" id="sub-box4">
+        <p class="parameter">ISP</p>
+        <p id="box4">Internet service provider</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="split top"></div>
+  <div class="split bottom" id="mapid"></div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
