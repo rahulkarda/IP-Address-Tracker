@@ -1,10 +1,10 @@
-## IP-Address-Tracker
+## IP Address Tracker
 Single page web application used to track IP address and its location. To get the IP Address locations, it is using the IP Geolocation API by IPify. It generates the live location on map.
 
 The site is live at : https://trackmyip.netlify.app/
 
 <a target="_blank" href="https://trackmyip.netlify.app">
-          <img src="https://github.com/rahulkarda/rahulkarda/blob/main/images/iptracker.jpg?raw=true" width="100%" alt="Track IP"/>
+          <img src="https://github.com/rahulkarda/IP-Address-Tracker/blob/master/images/iptracker.jpg?raw=true" width="100%" alt="Track IP"/>
 </a>
 <br>
 
